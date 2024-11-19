@@ -1,104 +1,48 @@
 import cairo
 
 # Set up surface
-surface = cairo.ImageSurface(cairo.FORMAT_RGB24, 800, 600)
+surface = cairo. ImageSurface (cairo.FORMAT_RGB24, 800, 600)
 ctx = cairo.Context(surface)
-ctx.set_source_rgb(0.8, 0.8, 0.8)
+ctx.set_source_rgb(1, 1, 1)
 ctx.paint()
+#grass
+ctx.move_to(200,390)
+ctx.line_to(80, 450)
+ctx.line_to (350, 580)
+ctx.line_to (630, 390) # B
+ctx.line_to (500, 340) # B
+ctx.close_path()
+
+ctx.set_source_rgb(0.2, 0.8, 0.2)
+
+
+
+ctx.fill()
+
+#grass
+ctx.move_to(80, 450)
+ctx.line_to(80, 470)
+ctx.line_to (350, 600)
+ctx.line_to (350, 580)
+ctx.line_to (350, 600)
+ctx.line_to (630, 410)
+ctx.line_to (630, 390)
+
+ctx.set_source_rgb(0.2, 0.8, 0.2)
+
+
+
+ctx.fill()
 
 # Floor
+
 ctx.move_to(200, 430)
 # A
-ctx.line_to(320, 480) # A
-# B
-ctx.line_to(450, 390) # B
-# C
-ctx.line_to(450, 410) # C
-# D
-ctx.line_to(320, 500) # D
-ctx.line_to(200, 450) # E
-ctx.close_path()
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-ctx.fill()
-
-ctx.fill()
-#stairs_UPCASE
-ctx.move_to(450, 390)#A
-ctx.line_to (495, 360) # B
-ctx.line_to (515, 370) # C
-ctx.line_to (470, 400) # D
-ctx.close_path()
-
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-ctx.set_line_width(2)
-
-ctx.stroke()
-
-
-#stairs_sidepart
-
-ctx.move_to(450, 410) # A
-ctx.line_to (480, 425) # B
-ctx.line_to (480, 413) # C
-ctx.line_to (470, 408) # D
-ctx.line_to (470, 400) # D
-#ctx.line_to (530, 385) # B
-
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-ctx.set_line_width(2)
-
-ctx.stroke()
-
-#stairs_frontpart
-
-ctx.move_to (480, 413) # A
-ctx.line_to (530, 380) # C
-ctx.line_to (530, 393) # C
-ctx.line_to (480, 426) # A
-ctx.close_path()
-
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-ctx.fill()
-
-
-#stairs_frontpart1
-ctx.move_to (470, 408) # C
-ctx.line_to (515, 377) # B
-ctx.line_to (515, 371) # D
-ctx.line_to (470, 400) # D
-ctx.close_path()
-
-
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-
-ctx.fill()
-
-#stairs_close part
-ctx.move_to (515, 377) # A
-ctx.line_to (530, 382) # B
-
-
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-ctx.set_line_width(2)
-
-ctx.stroke()
-
-
-#stairs_close part_last
-ctx.move_to (495, 360)
-ctx.line_to (510, 350) # B
-ctx.line_to (510, 368) # B
-ctx.line_to (495, 360)
-ctx.set_source_rgb(0.3, 0.3, 0.3)
-
-ctx.fill()
+ctx.line_to (320, 480) # A
+#B
+ctx.line_to (450, 390) # B
+#C
+ctx.line_to (450, 410) # C
+#D
+ctx.line_to (320, 500) # D
+ctx.line_to (200, 450) # E
