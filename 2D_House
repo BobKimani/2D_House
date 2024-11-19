@@ -189,3 +189,51 @@ ctx.line_to(270, 320)#250 400 C
 ctx.line_to(270, 360)#250 420 D
 ctx.close_path()
 ctx.fill()
+
+#1Floor Windows Right side
+#window 1 left
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(370, 350)#330 410 A
+ctx.line_to(370, 305)#290 390 B
+ctx.line_to(390, 290)#270 400 C
+ctx.line_to(390, 335)#310 420 D
+ctx.close_path()
+ctx.fill()
+#1Floor Windows Right side
+#window 2 right
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(400, 330)#330 410 A
+ctx.line_to(400, 290)#290 390 B
+ctx.line_to(420, 274)#270 400 C
+ctx.line_to(420, 315)#310 420 D
+ctx.close_path()
+ctx.fill()
+
+#roof
+ctx.move_to(190,230)#A
+ctx.line_to(250, 210)
+
+ctx.line_to(320, 270)
+ctx.line_to(520, 150)
+ctx.line_to(400, 100)
+ctx.line_to(400, 100)
+ctx.line_to(350,130)
+ctx.close_path()
+
+ctx.set_source_rgb(50/255, 50/255, 50/255)
+
+
+
+ctx.fill()
+
+
+
+# Draw the green slab (slightly larger version of the floor)
+#ctx.line_to(410, 600)
+#ctx.line_to(570, 500)
+#ctx.line_to(420, 430)
+#ctx.close_path()
+#ctx.set_source_rgb(0.3, 0.8, 0.3)
+#ctx.fill()
+#print project
+surface.write_to_png("house.png")
