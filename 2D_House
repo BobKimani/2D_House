@@ -134,3 +134,54 @@ ctx.set_source_rgb(0.3, 0.3, 0.3)
 
 ctx.fill()
 
+#Draw the houseside profile width surface area
+ctx.set_source_rgb(220/255, 220/255, 220/255)  # Normalize RGB values to 0-1 range
+ctx.move_to(200,430)
+ctx.line_to(200, 220)#-90
+ctx.line_to(320, 270)
+ctx.line_to(320, 480)#480
+ctx.close_path()
+ctx.fill()
+#Side profile -Length Surface area
+ctx.set_source_rgb(220/255, 220/255, 220/255)  # Normalize RGB values to 0-1 range
+ctx.move_to(320,480)#480
+ctx.line_to(320, 270)
+ctx.line_to(510, 150)
+ctx.line_to (510, 350)#390
+ctx.close_path()
+ctx.fill()
+
+#GFloor Windows
+#window 1 length- 40, width-10(TOP PLACE)
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(220, 410)#230 410 A
+ctx.line_to(220, 370)#230 390 B
+ctx.line_to(240, 380)#250 400 C
+ctx.line_to(240, 420)#250 420 D
+ctx.close_path()
+ctx.fill()
+#GFloor Windows
+#window 2
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(250, 425)#230 410 A
+ctx.line_to(250, 385)#230 390 B
+ctx.line_to(270, 395)#250 400 C
+ctx.line_to(270, 435)#250 420 D
+ctx.close_path()
+ctx.fill()
+
+#1Floor Windows
+#window 1
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(220, 335)#230 410 A
+ctx.line_to(220, 295)#230 390 B
+ctx.line_to(240, 305)#250 400 C
+ctx.line_to(240, 345)#250 420 D
+ctx.close_path()
+ctx.fill()
+
+#1Floor Windows
+#window 2
+ctx.set_source_rgb(173/255, 216/255, 230/255)
+ctx.move_to(250, 350)#230 410 A
+ctx.line_to(250, 310)#230 390 B
