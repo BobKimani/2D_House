@@ -185,3 +185,7 @@ ctx.fill()
 ctx.set_source_rgb(173/255, 216/255, 230/255)
 ctx.move_to(250, 350)#230 410 A
 ctx.line_to(250, 310)#230 390 B
+ctx.line_to(270, 320)#250 400 C
+ctx.line_to(270, 360)#250 420 D
+ctx.close_path()
+ctx.fill()
